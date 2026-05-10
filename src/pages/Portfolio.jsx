@@ -9,7 +9,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Replica Study for Learning Purposes",
-      description: "Saya membuat ulang tampilan ini sebagai latihan memahami layout, grid, tipografi, dan sistem warna. Setelah itu, saya mengembangkan versi redesign dengan pendekatan visual yang lebih sederhana dan modern.",
+      description: "I recreated this interface as a practice exercise to understand layout, grid, typography, and color systems. After that, I developed a redesigned version with a simpler and more modern visual approach.",
       tags: ['Figma', 'UI/UX', 'M-Banking', 'Case Study'],
       image: mbankingImg,
       link: "https://www.figma.com/design/yhRpV2fFG61LL0Pvehbkqw/M-BANKING?node-id=0-1&t=lMINTgEgXOFsVV6l-1"

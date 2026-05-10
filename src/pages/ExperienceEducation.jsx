@@ -7,7 +7,7 @@ const ExperienceEducation = () => {
       role: "HR - GA - IT Staff",
       company: "PT. Aiko Negara Daha",
       period: "2025 - Present",
-      description: "Leading the frontend team in developing scalable web applications. Architected the migration to Next.js, resulting in a 40% improvement in load times."
+      description: "At PT. Aiko Negara Daha, I am assigned to support three main areas: Human Resources, General Affairs, and Information Technology. My primary responsibility is in IT as a website developer, where I contributed to the development and management of the company website: https://www.akira.co.id/. In the General Affairs division, I check office facilities and ensure employee needs are met, including monitoring workplace conditions and assisting with operational requirements. In the Human Resources division, I make important announcements to employees, especially when there are sudden or urgent situations requiring immediate communication."
     },
     {
       role: "Mobile Developer",
