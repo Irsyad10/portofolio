@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import profileImg from '../assets/profile.png';
 
 const Hero = () => {
   return (
@@ -19,14 +20,14 @@ const Hero = () => {
           <Button href="mailto:contact@example.com" variant="secondary">Contact Me</Button>
         </div>
       </div>
-      <div className="flex-1 flex justify-center md:justify-end">
+      <div className="flex-1 flex justify-center">
         <div className="relative w-72 h-72 md:w-96 md:h-96">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl mix-blend-multiply animate-pulse"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 bg-surface-secondary rounded-[2rem] rotate-12 shadow-float border border-white"></div>
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            src={profileImg} 
             alt="Portrait" 
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 rounded-[2rem] object-cover shadow-float border border-white"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 rounded-[2rem] object-contain bg-white shadow-float border border-white"
           />
         </div>
       </div>

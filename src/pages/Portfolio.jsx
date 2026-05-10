@@ -19,13 +19,6 @@ const Portfolio = () => {
       link: "#"
     },
     {
-      title: "Health & Fitness App",
-      description: "A mobile-first application designed to track workouts, nutrition, and personal goals. Uses React Native and Firebase.",
-      tags: ['React Native', 'Firebase', 'Redux'],
-      image: "https://images.unsplash.com/photo-1526506114842-8356f9167ddb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
-      link: "#"
-    },
-    {
       title: "Social Media Scheduler",
       description: "An automated tool to plan and publish content across multiple social platforms simultaneously.",
       tags: ['Vue.js', 'Express', 'MongoDB'],
@@ -37,12 +30,12 @@ const Portfolio = () => {
   return (
     <div className="pt-32 pb-16">
       <div className="container-max">
-        <SectionTitle 
-          label="MY WORK" 
-          title="Portfolio" 
+        <SectionTitle
+          label="MY WORK"
+          title="Portfolio"
           className="mb-16"
         />
-        
+
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {projects.map((project, index) => (
             <PortfolioCard key={index} {...project} />

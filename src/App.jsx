@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import ExperienceEducation from './pages/ExperienceEducation';
+import Certificate from './pages/Certificate';
 import About from './pages/About';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/experience" element={<ExperienceEducation />} />
+          <Route path="/certificate" element={<Certificate />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>

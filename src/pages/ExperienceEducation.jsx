@@ -4,7 +4,7 @@ import SectionTitle from '../components/SectionTitle';
 const ExperienceEducation = () => {
   const experiences = [
     {
-      role: "Senior Frontend Engineer",
+      role: "HR - GA - IT Staff",
       company: "PT. AIKO NEGARA DAHA",
       period: "2025 - Present",
       description: "Leading the frontend team in developing scalable web applications. Architected the migration to Next.js, resulting in a 40% improvement in load times."
@@ -12,8 +12,8 @@ const ExperienceEducation = () => {
     {
       role: "Mobile Developer",
       company: "Shejek",
-      period: "2025 - 2025",
-      description: "Deveoped and maintained highly interactive user interfaces for various client projects. Collaborated closely with designers to ensure pixel-perfect implementation."
+      period: "Januari 2024 - Juni 2024",
+      description: "I focus on mobile app development, with responsibilities including adding and implementing new features."
     }
   ];
 

@@ -3,11 +3,36 @@ import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import PortfolioCard from '../components/PortfolioCard';
+import DigitalCertificate from '../components/DigitalCertificate';
 
 const Home = () => {
   return (
     <div className="pt-24 md:pt-32 pb-16">
       <Hero />
+
+      {/* Professional Certification Section */}
+      <section className="bg-surface-secondary/50 py-20 my-16 border-y border-border-subtle">
+        <div className="container-max">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-6">
+              <SectionTitle 
+                label="VERIFIED EXCELLENCE" 
+                title="Professional Certification" 
+              />
+              <p className="text-lg text-dark-text/70 leading-relaxed">
+                I am a certified <strong>Junior Web Programmer</strong>, recognized by the National Professional Certification Authority (BNSP) of Indonesia. This certification validates my technical competence in software development and web programming.
+              </p>
+              <div className="flex gap-4 pt-2">
+                <Button to="/certificate" variant="primary">View All Certificates</Button>
+              </div>
+            </div>
+            <div className="relative group">
+              <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <DigitalCertificate className="scale-90 md:scale-100 transition-transform duration-500 group-hover:scale-[1.02]" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Work */}
       <section className="container-max section-gap">

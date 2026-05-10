@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
+import profileImg from '../assets/profile.png';
 
 const About = () => {
   const skills = [
@@ -49,12 +50,12 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex justify-center">
             <div className="sticky top-32">
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative group">
                 <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 transition-opacity duration-300 group-hover:opacity-0"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  src={profileImg} 
                   alt="Irsyad Shofwan Fauzi" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
