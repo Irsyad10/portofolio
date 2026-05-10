@@ -5,7 +5,27 @@ import Button from '../components/Button';
 import PortfolioCard from '../components/PortfolioCard';
 import DigitalCertificate from '../components/DigitalCertificate';
 
+import smicyImg from '../assets/images/smicy.png';
+import mbankingImg from '../assets/images/mbanking-replica.png';
+
 const Home = () => {
+  const featuredProjects = [
+    {
+      title: "Replica Study for Learning Purposes",
+      description: "Saya membuat ulang tampilan ini sebagai latihan memahami layout, grid, tipografi, dan sistem warna. Setelah itu, saya mengembangkan versi redesign dengan pendekatan visual yang lebih sederhana dan modern.",
+      tags: ['Figma', 'UI/UX', 'M-Banking', 'Case Study'],
+      image: mbankingImg,
+      link: "https://www.figma.com/design/yhRpV2fFG61LL0Pvehbkqw/M-BANKING?node-id=0-1&t=lMINTgEgXOFsVV6l-1"
+    },
+    {
+      title: "Smicy - Social Media App",
+      description: "A premium dark-themed social media design focused on community connection. Built with a sleek, minimalist aesthetic, featuring high-fidelity UI components, interactive chat interfaces, and personalized user experiences.",
+      tags: ['Figma', 'UI/UX', 'Social Media', 'Dark Mode'],
+      image: smicyImg,
+      link: "https://www.figma.com/design/svP2SWmUzazlClsH107muo/SosialMedia?node-id=401-570&t=6yhw7Ck6unb3GSsG-1"
+    }
+  ];
+
   return (
     <div className="pt-24 md:pt-32 pb-16">
       <Hero />
@@ -47,20 +67,9 @@ const Home = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <PortfolioCard 
-            title="E-Commerce Platform"
-            description="A full-stack e-commerce solution with React, Node.js, and Stripe integration."
-            tags={['React', 'Node.js', 'Tailwind']}
-            link="#"
-            image="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-          />
-          <PortfolioCard 
-            title="Dashboard Analytics"
-            description="A real-time analytics dashboard for monitoring user engagement and sales metrics."
-            tags={['Next.js', 'TypeScript', 'Chart.js']}
-            link="#"
-            image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-          />
+          {featuredProjects.map((project, index) => (
+            <PortfolioCard key={index} {...project} />
+          ))}
         </div>
         
         <div className="mt-8 text-center md:hidden">

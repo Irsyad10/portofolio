@@ -5,7 +5,7 @@ const ExperienceEducation = () => {
   const experiences = [
     {
       role: "HR - GA - IT Staff",
-      company: "PT. AIKO NEGARA DAHA",
+      company: "PT. Aiko Negara Daha",
       period: "2025 - Present",
       description: "Leading the frontend team in developing scalable web applications. Architected the migration to Next.js, resulting in a 40% improvement in load times."
     },
