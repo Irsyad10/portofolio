@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="py-16 md:py-24">
       <div className="container-max">
         <div className="grid md:grid-cols-2 gap-16 items-start">
 

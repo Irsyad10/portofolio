@@ -1,9 +1,20 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import DigitalCertificate from '../components/DigitalCertificate';
+import javaCertImg from '../assets/images/java-certificate.png';
+import udemyCertImg from '../assets/images/udemy-html-css-js.png';
 
 const Certificate = () => {
   const certificates = [
+    {
+      type: 'card',
+      title: "HTML, CSS dan JavaScript : Pemula sampai Mahir",
+      issuer: "Udemy (Programmer Zaman Now)",
+      date: "16 Mei 2026",
+      description: "Sertifikat penyelesaian kursus HTML, CSS dan JavaScript: Pemula sampai Mahir dari Udemy dengan total waktu 33.5 jam.",
+      image: udemyCertImg,
+      tags: ['HTML', 'CSS', 'JavaScript', 'Frontend']
+    },
     {
       type: 'digital',
       title: "Sertifikat Kompetensi - Junior Web Programmer",
@@ -31,11 +42,20 @@ const Certificate = () => {
       description: "Sertifikat kompetensi kelulusan kelas Belajar Dasar Cloud dan Gen AI di AWS dari Dicoding Academy.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
       tags: ['Cloud Computing', 'AWS', 'Gen AI']
+    },
+    {
+      type: 'card',
+      title: "Memulai Pemrograman Dengan Java",
+      issuer: "Dicoding Indonesia",
+      date: "11 Mei 2026",
+      description: "Sertifikat kompetensi kelulusan kelas Memulai Pemrograman Dengan Java dari Dicoding Academy.",
+      image: javaCertImg,
+      tags: ['Java', 'Programming', 'Backend']
     }
   ];
 
   return (
-    <div className="pt-32 pb-16 bg-surface-base min-h-screen">
+    <div className="py-16 md:py-24 bg-surface-base">
       <div className="container-max">
         <SectionTitle 
           label="ACHIEVEMENTS" 

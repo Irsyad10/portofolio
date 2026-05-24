@@ -58,7 +58,7 @@ const ExperienceEducation = () => {
   );
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="py-16 md:py-24">
       <div className="container-max max-w-4xl">
         <SectionTitle
           label="CAREER"

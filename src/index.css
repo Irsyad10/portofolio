@@ -20,6 +20,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans bg-surface-base text-dark-text;
   }

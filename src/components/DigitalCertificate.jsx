@@ -3,7 +3,7 @@ import garudaImg from '../assets/images/garuda.png';
 
 const DigitalCertificate = ({ className }) => {
   return (
-    <div className={`max-w-3xl mx-auto bg-white shadow-2xl border-8 border-double border-gray-200 p-8 md:p-12 relative overflow-hidden rounded-sm ${className}`}>
+    <div className={`max-w-3xl mx-auto bg-surface-1 shadow-2xl border-8 border-double border-gray-200 p-8 md:p-12 relative overflow-hidden rounded-sm ${className}`}>
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
       
@@ -29,7 +29,7 @@ const DigitalCertificate = ({ className }) => {
         </div>
 
         <div className="mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold text-primary mb-1 tracking-tight">IRSYAD SHOFWAN FAUZI</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-accent-blue mb-1 tracking-tight">IRSYAD SHOFWAN FAUZI</h1>
           <p className="text-[9px] font-mono text-gray-500 tracking-[0.3em] font-semibold">No. Reg. TIK.1977.00467 2024</p>
         </div>
 
@@ -41,7 +41,7 @@ const DigitalCertificate = ({ className }) => {
 
           <div className="space-y-1 pt-3 border-t border-gray-100 w-full max-w-md mx-auto">
             <p className="text-[9px] italic font-serif">Dengan Kualifikasi: / With Qualification:</p>
-            <p className="text-base md:text-xl font-bold uppercase text-primary">Pemrogram Web Junior</p>
+            <p className="text-base md:text-xl font-bold uppercase text-accent-blue">Pemrogram Web Junior</p>
           </div>
         </div>
 
@@ -67,3 +67,5 @@ const DigitalCertificate = ({ className }) => {
 };
 
 export default DigitalCertificate;
+
+

@@ -12,8 +12,8 @@ const Button = ({ children, variant = 'primary', className, to, href, ...props }
   
   const variants = {
     primary: "bg-primary text-white hover:bg-primary/90 shadow-soft",
-    secondary: "bg-transparent text-primary border-[1.5px] border-primary hover:bg-surface-secondary",
-    ghost: "bg-transparent text-dark-text hover:bg-surface-secondary"
+    secondary: "bg-transparent text-accent-blue border-[1.5px] border-primary hover:bg-surface-1",
+    ghost: "bg-transparent text-ink hover:bg-surface-1"
   };
 
   const classes = cn(baseStyles, variants[variant], className);
@@ -42,3 +42,4 @@ const Button = ({ children, variant = 'primary', className, to, href, ...props }
 };
 
 export default Button;
+

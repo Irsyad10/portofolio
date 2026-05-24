@@ -5,7 +5,7 @@ const SectionTitle = ({ label, title, className, align = 'left' }) => {
   return (
     <div className={cn("flex flex-col gap-4", align === 'center' && "items-center text-center", className)}>
       {label && (
-        <span className="font-mono text-sm font-semibold tracking-widest text-primary uppercase">
+        <span className="font-mono text-sm font-semibold tracking-widest text-accent-blue uppercase">
           {label}
         </span>
       )}
@@ -17,3 +17,5 @@ const SectionTitle = ({ label, title, className, align = 'left' }) => {
 };
 
 export default SectionTitle;
+
+

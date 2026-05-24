@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Gemini agent files
+.agents/
+DESIGN.md
+skills-lock.json

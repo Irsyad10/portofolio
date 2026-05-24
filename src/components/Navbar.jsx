@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { cn } from './Button';
 
@@ -16,11 +15,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Experience & Education', path: '/experience' },
-    { name: 'Certificate', path: '/certificate' },
-    { name: 'About', path: '/about' },
+    { name: 'Home', path: '#home' },
+    { name: 'Portfolio', path: '#portfolio' },
+    { name: 'Experience', path: '#experience' },
+    { name: 'Certificate', path: '#certificate' },
+    { name: 'About', path: '#about' },
   ];
 
   return (
@@ -29,25 +28,20 @@ const Navbar = () => {
       isScrolled ? "bg-surface-base/80 backdrop-blur-md shadow-soft py-4" : "bg-transparent py-6"
     )}>
       <div className="container-max flex items-center justify-between">
-        <NavLink to="/" className="text-xl font-bold font-display text-primary">
+        <a href="#home" className="text-xl font-bold font-display text-primary">
           Irsyad Shofwan Fauzi
-        </NavLink>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <NavLink
+            <a
               key={link.name}
-              to={link.path}
-              className={({ isActive }) => cn(
-                "text-sm font-medium transition-colors relative",
-                isActive ? "text-primary" : "text-dark-text/70 hover:text-dark-text",
-                "after:content-[''] after:absolute after:-bottom-1.5 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:rounded-full after:transition-opacity",
-                isActive ? "after:bg-primary after:opacity-100" : "after:opacity-0"
-              )}
+              href={link.path}
+              className="text-sm font-medium transition-colors relative text-dark-text/70 hover:text-dark-text after:content-[''] after:absolute after:-bottom-1.5 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:rounded-full after:transition-opacity after:opacity-0 hover:after:bg-primary hover:after:opacity-100"
             >
               {link.name}
-            </NavLink>
+            </a>
           ))}
         </nav>
 
@@ -64,17 +58,14 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-float border-t border-border-subtle p-4 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <NavLink
+            <a
               key={link.name}
-              to={link.path}
+              href={link.path}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={({ isActive }) => cn(
-                "p-3 rounded-lg text-sm font-medium transition-colors",
-                isActive ? "bg-surface-secondary text-primary" : "text-dark-text/70 hover:bg-surface-base"
-              )}
+              className="p-3 rounded-lg text-sm font-medium transition-colors text-dark-text/70 hover:bg-surface-base"
             >
               {link.name}
-            </NavLink>
+            </a>
           ))}
         </div>
       )}

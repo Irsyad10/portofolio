@@ -24,7 +24,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="py-16 md:py-24">
       <div className="container-max">
         <SectionTitle
           label="MY WORK"

@@ -16,8 +16,8 @@ const Hero = () => {
           I'm a passionate software engineer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
-          <Button to="/portfolio" variant="primary">View My Work</Button>
-          <Button href="mailto:contact@example.com" variant="secondary">Contact Me</Button>
+          <Button href="#portfolio" variant="primary">View My Work</Button>
+          <Button href="mailto:irsyadfauzi1009@gmail.com" variant="secondary">Irsyadfauzi1009@gmail.com</Button>
         </div>
       </div>
       <div className="flex-1 flex justify-center">
