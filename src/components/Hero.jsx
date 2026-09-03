@@ -17,7 +17,8 @@ const Hero = () => {
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
           <Button href="#portfolio" variant="primary">View My Work</Button>
-          <Button href="mailto:irsyadfauzi1009@gmail.com" variant="secondary">Irsyadfauzi1009@gmail.com</Button>
+          <Button href="/cv.pdf" variant="secondary" target="_blank" rel="noopener noreferrer">Download CV</Button>
+          <Button href="mailto:irsyadfauzi1009@gmail.com" variant="secondary">Contact Me</Button>
         </div>
       </div>
       <div className="flex-1 flex justify-center">

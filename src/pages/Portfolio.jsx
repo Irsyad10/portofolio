@@ -4,6 +4,7 @@ import PortfolioCard from '../components/PortfolioCard';
 
 import smicyImg from '../assets/images/smicy.png';
 import mbankingImg from '../assets/images/mbanking-replica.png';
+import taskReminderImg from '../assets/images/task-reminder.png';
 
 const Portfolio = () => {
   const projects = [
@@ -20,6 +21,13 @@ const Portfolio = () => {
       tags: ['Figma', 'UI/UX', 'Social Media', 'Dark Mode'],
       image: smicyImg,
       link: "https://www.figma.com/design/svP2SWmUzazlClsH107muo/SosialMedia?node-id=401-570&t=6yhw7Ck6unb3GSsG-1"
+    },
+    {
+      title: "Task Reminder",
+      description: "A web application designed to help users manage and keep track of their daily tasks and reminders efficiently.",
+      tags: ['Web App', 'Productivity', 'React', 'Vercel'],
+      image: taskReminderImg,
+      link: "https://task-reminder-lake-nine.vercel.app/"
     }
   ];
 
