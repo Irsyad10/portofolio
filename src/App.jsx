@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import ExperienceEducation from './pages/ExperienceEducation';
 import Certificate from './pages/Certificate';
-import Academic from './pages/Academic';
 import About from './pages/About';
 
 function App() {
@@ -24,9 +23,6 @@ function App() {
         </section>
         <section id="certificate" className="scroll-mt-24">
           <Certificate />
-        </section>
-        <section id="academic" className="scroll-mt-24">
-          <Academic />
         </section>
         <section id="about" className="scroll-mt-24">
           <About />
