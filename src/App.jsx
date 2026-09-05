@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio';
 import ExperienceEducation from './pages/ExperienceEducation';
 import Certificate from './pages/Certificate';
 import About from './pages/About';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         </section>
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
