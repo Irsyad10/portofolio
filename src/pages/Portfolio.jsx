@@ -5,6 +5,7 @@ import PortfolioCard from '../components/PortfolioCard';
 import smicyImg from '../assets/images/smicy.png';
 import mbankingImg from '../assets/images/mbanking-replica.png';
 import taskReminderImg from '../assets/images/task-reminder.png';
+import biddleGameImg from '../assets/images/biddle-game.jpg';
 
 const Portfolio = () => {
   const projects = [
@@ -28,6 +29,13 @@ const Portfolio = () => {
       tags: ['Web App', 'Productivity', 'React', 'Vercel'],
       image: taskReminderImg,
       link: "https://task-reminder-lake-nine.vercel.app/"
+    },
+    {
+      title: "Biddle Game",
+      description: "Tugas kuliah pembuatan game bertemakan Indonesia. Dibangun menggunakan bahasa pemrograman Java.",
+      tags: ['Java', 'Game', 'College Assignment'],
+      image: biddleGameImg,
+      link: "https://irsyadshofwanfauzi.itch.io/biddle-games"
     }
   ];
 
