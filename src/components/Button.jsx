@@ -8,12 +8,12 @@ export function cn(...inputs) {
 }
 
 const Button = ({ children, variant = 'primary', className, to, href, ...props }) => {
-  const baseStyles = "inline-flex items-center justify-center font-sans font-medium transition-colors rounded-lg px-6 py-3 text-sm md:text-base";
+  const baseStyles = "inline-flex items-center justify-center font-sans font-medium transition-all duration-200 rounded-lg px-6 py-3 text-sm md:text-base cursor-pointer";
   
   const variants = {
-    primary: "bg-primary text-white hover:bg-primary/90 shadow-soft",
-    secondary: "bg-transparent text-accent-blue border-[1.5px] border-primary hover:bg-surface-1",
-    ghost: "bg-transparent text-ink hover:bg-surface-1"
+    primary: "bg-primary text-white hover:opacity-90 shadow-soft hover:shadow-float active:scale-[0.98]",
+    secondary: "bg-surface-card/60 text-primary border border-primary/50 hover:border-primary hover:bg-surface-secondary shadow-xs active:scale-[0.98]",
+    ghost: "bg-transparent text-dark-text hover:bg-surface-secondary"
   };
 
   const classes = cn(baseStyles, variants[variant], className);
@@ -42,4 +42,3 @@ const Button = ({ children, variant = 'primary', className, to, href, ...props }
 };
 
 export default Button;
-

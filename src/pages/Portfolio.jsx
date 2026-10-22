@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import PortfolioCard from '../components/PortfolioCard';
+import { useLanguage } from '../context/LanguageContext';
 
 import smicyImg from '../assets/images/smicy.png';
 import mbankingImg from '../assets/images/mbanking-replica.png';
@@ -8,43 +9,26 @@ import taskReminderImg from '../assets/images/task-reminder.png';
 import biddleGameImg from '../assets/images/biddle-game.jpg';
 
 const Portfolio = () => {
-  const projects = [
-    {
-      title: "Replica Study for Learning Purposes",
-      description: "I recreated this interface as a practice exercise to understand layout, grid, typography, and color systems. After that, I developed a redesigned version with a simpler and more modern visual approach.",
-      tags: ['Figma', 'UI/UX', 'M-Banking', 'Case Study'],
-      image: mbankingImg,
-      link: "https://www.figma.com/design/yhRpV2fFG61LL0Pvehbkqw/M-BANKING?node-id=0-1&t=lMINTgEgXOFsVV6l-1"
-    },
-    {
-      title: "Smicy - Social Media App",
-      description: "A premium dark-themed social media design focused on community connection. Built with a sleek, minimalist aesthetic, featuring high-fidelity UI components, interactive chat interfaces, and personalized user experiences.",
-      tags: ['Figma', 'UI/UX', 'Social Media', 'Dark Mode'],
-      image: smicyImg,
-      link: "https://www.figma.com/design/svP2SWmUzazlClsH107muo/SosialMedia?node-id=401-570&t=6yhw7Ck6unb3GSsG-1"
-    },
-    {
-      title: "Task Reminder",
-      description: "A web application designed to help users manage and keep track of their daily tasks and reminders efficiently.",
-      tags: ['Web App', 'Productivity', 'React', 'Vercel'],
-      image: taskReminderImg,
-      link: "https://task-reminder-lake-nine.vercel.app/"
-    },
-    {
-      title: "Biddle Game",
-      description: "Tugas kuliah pembuatan game bertemakan Indonesia. Dibangun menggunakan bahasa pemrograman Java.",
-      tags: ['Java', 'Game', 'College Assignment'],
-      image: biddleGameImg,
-      link: "https://irsyadshofwanfauzi.itch.io/biddle-games"
-    }
+  const { t } = useLanguage();
+
+  const projectImages = [
+    mbankingImg,
+    smicyImg,
+    taskReminderImg,
+    biddleGameImg
   ];
+
+  const projects = t.portfolio.projects.map((project, index) => ({
+    ...project,
+    image: projectImages[index]
+  }));
 
   return (
     <div className="py-16 md:py-24">
       <div className="container-max">
         <SectionTitle
-          label="MY WORK"
-          title="Portfolio"
+          label={t.portfolio.label}
+          title={t.portfolio.title}
           className="mb-16"
         />
 

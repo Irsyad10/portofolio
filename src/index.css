@@ -1,11 +1,49 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #6D28D9;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
   --color-surface-base: #FAF8FF;
   --color-surface-secondary: #F5F3FF;
+  --color-surface-card: #FFFFFF;
   --color-dark-text: #0F172A;
+  --color-dark-muted: #475569;
   --color-border-subtle: #E2E8F0;
+  --color-primary: #7C3AED;
+  --color-accent-blue: #6D28D9;
+  --color-surface-1: #FAF8FF;
+  --color-ink: #0F172A;
+  --color-ink-muted: #64748B;
+  color-scheme: light;
+}
+
+:root.dark, html.dark, body.dark, .dark {
+  --color-surface-base: #0B0F19;
+  --color-surface-secondary: #131B2E;
+  --color-surface-card: #151F32;
+  --color-dark-text: #F8FAFC;
+  --color-dark-muted: #94A3B8;
+  --color-border-subtle: #1E293B;
+  --color-primary: #8B5CF6;
+  --color-accent-blue: #A78BFA;
+  --color-surface-1: #131B2E;
+  --color-ink: #F8FAFC;
+  --color-ink-muted: #94A3B8;
+  color-scheme: dark;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-surface-base: var(--color-surface-base);
+  --color-surface-secondary: var(--color-surface-secondary);
+  --color-surface-card: var(--color-surface-card);
+  --color-dark-text: var(--color-dark-text);
+  --color-dark-muted: var(--color-dark-muted);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-accent-blue: var(--color-accent-blue);
+  --color-surface-1: var(--color-surface-1);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
 
   --font-sans: "Inter", sans-serif;
   --font-display: "Plus Jakarta Sans", sans-serif;
@@ -25,7 +63,9 @@
   }
 
   body {
-    @apply font-sans bg-surface-base text-dark-text;
+    @apply font-sans bg-surface-base text-dark-text transition-colors duration-300;
+    background-color: var(--color-surface-base);
+    color: var(--color-dark-text);
   }
 
   h1,
@@ -35,6 +75,7 @@
   h5,
   h6 {
     @apply font-display tracking-tight text-dark-text;
+    color: var(--color-dark-text);
   }
 }
 
